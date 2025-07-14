@@ -8,32 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="form" action="inscription.php" methode="post">
+    <form class="form" action="../traitement/inscription.php" methode="POST">
         <p class="title">WELCOME USER</p>
         <div class="flex">
             <label>
-                <input class="input" type="text" name="name" required="">
+                <input class="input" type="text" name="name" required>
                 <span>Name</span>
             </label>
             <label>
-                <input class="input" type="text" name="gender" required="">
+                <input class="input" type="text" name="gender" required>
                 <span>Gender</span>
             </label>
         </div>  
         <label>
-            <input class="input" type="email" name="email" required="">
+            <input class="input" type="email" name="email" required>
             <span>Email</span>
         </label> 
         <label>
-            <input class="input" type="text" name="ville" required="">
+            <input class="input" type="text" name="ville" required>
             <span>Ville</span>
         </label> 
         <label>
-            <input class="input" type="password" name="password" required="">
+            <input class="input" type="password" name="password" required>
             <span>Password</span>
         </label>
         <label>
-            <input class="input" type="date" name="naissance" required="">
+            <input class="input" type="date" name="naissance" required>
             <span>Birth Date</span>
         </label>
         <button class="submit">Submit</button>
