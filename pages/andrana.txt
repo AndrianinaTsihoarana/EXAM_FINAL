@@ -1,0 +1,54 @@
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>    
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style1.css">
+</head>
+<body>
+    <h1 class="text-center">Vous allez emprunter :</h1>
+    <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"><p><strong>Objet :</strong> <?php echo $_GET['objet']; ?></p></h5>
+        <p class="card-text"><p><strong>Catégorie :</strong> <?php echo $_GET['categorie']; ?></p></p>
+        <a href="#" class="btn btn-primary">Emprunter pendant 14 jours</a>
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>    
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style1.css">
+</head>
+<body>
+    <h1 class="text-center">Vous allez emprunter :</h1>
+    <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"><p><strong>Objet :</strong> <?php echo $_GET['objet']; ?></p></h5>
+        <p class="card-text"><p><strong>Catégorie :</strong> <?php echo $_GET['categorie']; ?></p></p>
+        <a href="#" class="btn btn-primary">Emprunter pendant 14 jours</a>
+    </div>
+    </div>
+</body>
+</html>

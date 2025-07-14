@@ -1,0 +1,230 @@
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: block;
+}
+
+.home_body h1,
+.home_body h2,
+.home_body .title {
+  color: #00bfff;
+}
+
+.home_body p,
+.home_body .text,
+.home_body .message {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.home_body .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.home_body .card {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.home_body .card .card-body {
+  padding: 15px;
+}
+
+@media (max-width: 480px) {
+  .index_body .form,
+  .home_body {
+    padding: 15px;
+  }
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
+}
+
+.shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: hsl(0deg 0% 0% / 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}
+
+.front {
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+ font-size: 1.1rem;
+ color: white;
+ background: hsl(345deg 100% 47%);
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+ filter: brightness(110%);
+}
+
+button:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+button:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+ outline: none;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.body_upload {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card_upload {
+  background-color: #1c1c1c;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.card_upload h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00ffff;
+}
+
+.card_upload .form-group {
+  margin-bottom: 20px;
+}
+
+.card_upload .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ccc;
+}
+
+.card_upload .form-group input[type="text"],
+.card_upload .form-group textarea,
+.card_upload .form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 15px;
+}
+
+.card_upload .form-group input[type="file"] {
+  padding: 6px;
+}
+
+.card_upload .form-group textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.card_upload .btn-upload {
+  width: 100%;
+  padding: 12px;
+  background-color: #00ffff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card_upload .btn-upload:hover {
+  background-color: #00cccc;
+}
+
+.card_upload .back-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.card_upload .back-link a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.card_upload .back-link a:hover {
+  text-decoration: underline;
+}

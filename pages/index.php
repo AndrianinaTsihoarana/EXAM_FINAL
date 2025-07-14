@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="form" action="../traitement/inscription.php" methode="POST">
+<div class="index_body">
+        <form class="form" action="../traitement/inscription.php" method="POST">
         <p class="title">WELCOME USER</p>
         <div class="flex">
             <label>
@@ -39,5 +40,6 @@
         <button class="submit">Submit</button>
         <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
     </form>
+</div>
 </body>
 </html>

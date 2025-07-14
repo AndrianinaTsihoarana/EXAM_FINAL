@@ -1,20 +1,25 @@
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #121212;
   font-family: Arial, sans-serif;
 }
 
-.form {
+.index_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.index_body .form {
   width: 100%;
   max-width: 400px;
   padding: 30px;
@@ -28,8 +33,7 @@ html, body {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-
-.title {
+.index_body .title {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -40,21 +44,10 @@ html, body {
   color: #00bfff;
 }
 
-.title::before {
-  width: 18px;
-  height: 18px;
-}
-
-.title::after {
-  width: 18px;
-  height: 18px;
-  animation: pulse 1s linear infinite;
-}
-
-.title::before,
-.title::after {
-  position: absolute;
+.index_body .title::before,
+.index_body .title::after {
   content: "";
+  position: absolute;
   height: 16px;
   width: 16px;
   border-radius: 50%;
@@ -62,35 +55,39 @@ html, body {
   background-color: #00bfff;
 }
 
-.message, 
-.signin {
+.index_body .title::after {
+  animation: pulse 1s linear infinite;
+}
+
+.index_body .message, 
+.index_body .signin {
   font-size: 14.5px;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.signin {
+.index_body .signin {
   text-align: center;
 }
 
-.signin a:hover {
+.index_body .signin a:hover {
   text-decoration: underline royalblue;
 }
 
-.signin a {
+.index_body .signin a {
   color: #00bfff;
 }
 
-.flex {
+.index_body .flex {
   display: flex;
   width: 100%;
   gap: 6px;
 }
 
-.form label {
+.index_body .form label {
   position: relative;
 }
 
-.form label .input {
+.index_body .form label .input {
   background-color: #333;
   color: #fff;
   width: 100%;
@@ -100,7 +97,7 @@ html, body {
   border-radius: 10px;
 }
 
-.form label .input + span {
+.index_body .form label .input + span {
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 10px;
@@ -110,24 +107,24 @@ html, body {
   transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span {
+.index_body .form label .input:placeholder-shown + span {
   top: 12.5px;
   font-size: 0.9em;
 }
 
-.form label .input:focus + span,
-.form label .input:valid + span {
+.index_body .form label .input:focus + span,
+.index_body .form label .input:valid + span {
   color: #00bfff;
   top: 0px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.input {
+.index_body .input {
   font-size: medium;
 }
 
-.submit {
+.index_body .submit {
   border: none;
   outline: none;
   padding: 10px;
@@ -140,7 +137,7 @@ html, body {
   background-color: #00bfff;
 }
 
-.submit:hover {
+.index_body .submit:hover {
   background-color: #00bfff96;
 }
 
@@ -149,7 +146,6 @@ html, body {
     transform: scale(0.9);
     opacity: 1;
   }
-
   to {
     transform: scale(1.8);
     opacity: 0;

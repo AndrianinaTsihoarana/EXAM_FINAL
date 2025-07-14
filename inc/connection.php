@@ -1,7 +1,7 @@
 <?php
     function base_connect() 
     {
-        if ($connect = mysqli_connect('127.0.0.1', 'root', 'root', 'emprunt_db')) 
+        if ($connect = mysqli_connect('localhost', 'ETU004047', 'tmeBam4b', 'db_s2_ETU004047')) 
         {
             if (!$connect) 
             {
@@ -11,4 +11,5 @@
         }
         return $connect;
     }
+
 ?>

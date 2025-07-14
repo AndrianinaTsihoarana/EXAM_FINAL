@@ -5,13 +5,15 @@
     session_start();
 
     $nom = $_POST['name'];
-    //$naissance = $_POST['naissance'];
-    // $genre  =$_POST['genre'];
-    // $email = $_POST['email'];
-    // $ville = $_POST['ville'];
-    // $password = $_POST['password'];
+    $naissance = $_POST['naissance'];
+    $genre  =$_POST['gender'];
+    $email = $_POST['email'];
+    $ville = $_POST['ville'];
+    $password = $_POST['password'];
 
-    // mapiditra_membre($nom , $naissance, $genre , $email, $ville, $password);
+    $_SESSION['Nom'] = $nom;
 
-    //header("Location: ../pages/home.php");
+    mapiditra_membre($nom , $naissance, $genre , $email, $ville, $password);
+
+    header("Location: ../pages/home.php");
 ?>
